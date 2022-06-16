@@ -5,9 +5,9 @@ jobs:
     runs-on: [ubuntu-latest]
     container: python:3.8
     steps:
-      -uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       
-      -name: ci_run
-       run: |
-        pip install -r requeriments.txt
-        pytest test/
+      - name: ci_run
+        run: |
+         pip install -r requeriments.txt
+         pytest test/
