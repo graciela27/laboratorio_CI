@@ -3,7 +3,7 @@ on: [push]
 jobs:
   run:
     runs-on:[ubuntu-latest]
-    container: python:3.10
+    container: python:3.8
     steps:
       -user: action/checkout@v2
       
