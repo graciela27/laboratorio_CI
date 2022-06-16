@@ -2,13 +2,12 @@ name: ci-test
 on: [push]
 jobs:
   run:
-    runs-on:[ubuntu-latest]
+    runs-on: [ubuntu-latest]
     container: python:3.8
     steps:
-      -user: action/checkout@v2
+      -uses: actions/checkout@v2
       
       -name: ci_run
-        run: |
-          pip install -r requeriments.txt
-          pytest test/
-      
+       run: |
+        pip install -r requeriments.txt
+        pytest test/
